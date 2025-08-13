@@ -1,0 +1,39 @@
+{
+    "github.copilot.enable": {
+        "*": true,
+        "markdown": true,
+        "plaintext": false
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.chat.enableCodeActions": true,
+    "github.copilot.chat.persistHistory": true,
+    "github.copilot.advanced": {
+        "length": 500,
+        "temperature": 0.1,
+        "top_p": 1,
+        "debug.overrideEngine": "copilot-codex"
+    },
+    "github.copilot.conversation.appendMode": true,
+    "github.copilot.chat.welcomeMessage": "never",
+    "python.defaultInterpreterPath": "py",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "editor.rulers": [
+        88
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggestSelection": "first",
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*\\.(txt|md|py|html|json|css)$",
+                "cmd": "py ..\\format_file.py \"${file}\"",
+                "isAsync": true
+            }
+        ]
+    },
+}
